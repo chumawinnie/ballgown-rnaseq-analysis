@@ -101,7 +101,7 @@ source("install_packages.R")
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/yourusername/rnaseq-de-pipeline.git
+git clone https://github.com/chumawinnie/rnaseq-de-pipeline.git
 cd rnaseq-de-pipeline
 
 # 2. Run alignment (modify paths in script first)
@@ -386,7 +386,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-Created by [Your Name]
+Created by chukwuma winner obiora
 
 ---
 
