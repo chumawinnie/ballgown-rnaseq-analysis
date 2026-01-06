@@ -298,13 +298,13 @@ results/enrichment/
 
 | Volcano Plot (q-value) | Heatmap | PCA |
 |:---:|:---:|:---:|
-| ![Volcano](results/plots/volcano_plot_qvalue.png) | ![Heatmap](results/plots/heatmap_top_genes.png) | ![PCA](results/plots/PCA_plot.png) |
+| ![Volcano](images/de_plots/volcano_plot_qvalue.png) | ![Heatmap](images/de_plots/heatmap_top_genes.png) | ![PCA](images/de_plots/PCA_plot.png) |
 
 ### Functional Enrichment
 
 | GO Enrichment | KEGG Pathways | Gene-Concept Network |
 |:---:|:---:|:---:|
-| ![GO](results/enrichment/plots/GO_combined_dotplot.png) | ![KEGG](results/enrichment/plots/KEGG_ORA_dotplot.png) | ![Cnet](results/enrichment/plots/GO_BP_cnetplot.png) |
+| ![GO](images/enrichment_plots/GO_combined_dotplot.png) | ![KEGG](images/enrichment_plots/KEGG_ORA_dotplot.png) | ![Cnet](images/enrichment_plots/GO_BP_cnetplot.png) |
 
 ## 🔄 Pipeline Workflow
 
