@@ -7,7 +7,7 @@ A comprehensive pipeline for RNA-seq analysis from raw reads to functional enric
 [![Bioconductor](https://img.shields.io/badge/Bioconductor-3.18-green.svg)](https://bioconductor.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Pipeline Workflow](#pipeline-workflow)
@@ -21,7 +21,7 @@ A comprehensive pipeline for RNA-seq analysis from raw reads to functional enric
 - [Citation](#citation)
 - [License](#license)
 
-## 🔬 Overview
+##  Overview
 
 This pipeline performs end-to-end RNA-seq analysis:
 
@@ -31,7 +31,7 @@ This pipeline performs end-to-end RNA-seq analysis:
 4. **Functional Enrichment** - GO (topGO) and KEGG pathway analysis
 5. **Immune Deconvolution** - immunedeconv (xCell method)
 
-## 🔄 Pipeline Workflow
+##  Pipeline Workflow
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -71,7 +71,7 @@ This pipeline performs end-to-end RNA-seq analysis:
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-## ✨ Features
+##  Features
 
 - **Complete pipeline**: From raw reads to functional interpretation
 - **Proper statistical thresholds**: Uses q-value (FDR) instead of p-value
@@ -81,7 +81,7 @@ This pipeline performs end-to-end RNA-seq analysis:
 - **Immune profiling**: Cell type deconvolution from bulk RNA-seq
 - **Publication-ready visualizations**
 
-## 📦 Requirements
+##  Requirements
 
 ### Software
 
@@ -97,7 +97,7 @@ This pipeline performs end-to-end RNA-seq analysis:
 source("install_packages.R")
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # 1. Clone repository
@@ -117,7 +117,7 @@ source("functional_enrichment_qvalue.R")
 source("immune_deconvolution.R")
 ```
 
-## 📜 Scripts Description
+##  Scripts Description
 
 | Script | Purpose | Input | Output |
 |--------|---------|-------|--------|
@@ -153,7 +153,7 @@ Comprehensive enrichment analysis:
 #### 4. `immune_deconvolution.R`
 Estimates immune cell composition using xCell method
 
-## 📂 Input Data
+##  Input Data
 
 ### Directory Structure
 
@@ -197,7 +197,7 @@ The `metadata.csv` file must have these columns:
 
 **Important**: The `ids` column must exactly match the folder names (including `.ballgown` suffix).
 
-## 🚀 Usage
+##  Usage
 
 ### Step 1: Differential Expression Analysis
 
@@ -226,7 +226,7 @@ qval_cutoff <- 0.05      # FDR threshold
 log2fc_cutoff <- 1       # Fold change threshold (2-fold)
 ```
 
-## 📁 Output Files
+##  Output Files
 
 ### Differential Expression Results
 
@@ -292,7 +292,7 @@ results/enrichment/
     └── KEGG_GSEA_running_score.png
 ```
 
-## 📊 Visualization Gallery
+##  Visualization Gallery
 
 ### Differential Expression
 
@@ -306,7 +306,7 @@ results/enrichment/
 |:---:|:---:|:---:|
 | ![GO](images/enrichment_plots/GO_combined_dotplot.png) | ![KEGG](images/enrichment_plots/KEGG_ORA_dotplot.png) | ![Cnet](images/enrichment_plots/GO_BP_cnetplot.png) |
 
-## 🔄 Pipeline Workflow
+##  Pipeline Workflow
 
 ```mermaid
 graph TD
@@ -328,7 +328,7 @@ graph TD
     K --> L
 ```
 
-## 📖 Methods Description
+##  Methods Description
 
 For publications, you can adapt the following methods text:
 
@@ -338,7 +338,7 @@ For publications, you can adapt the following methods text:
 >
 > **Functional Enrichment**: Gene Ontology enrichment was performed using topGO (v2.50.0) with the weight01 algorithm and clusterProfiler (v4.6.0). KEGG pathway analysis was conducted using over-representation analysis (ORA) for significant gene sets and Gene Set Enrichment Analysis (GSEA) using ranked gene lists (sign(log2FC) × -log10(q-value)).
 
-## ⚠️ Important Notes
+##  Important Notes
 
 ### Why q-value instead of p-value?
 
@@ -356,7 +356,7 @@ If you observe more significant genes in one direction (e.g., only downregulated
 - Knockout experiments (loss of function)
 - Drug treatments (suppression of pathways)
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -370,7 +370,7 @@ If you observe more significant genes in one direction (e.g., only downregulated
 3. **Warnings about deprecated arguments**
    - These are warnings, not errors. The analysis still completes successfully.
 
-## 📚 Citation
+##  Citation
 
 If you use this pipeline, please cite:
 
@@ -380,7 +380,7 @@ topGO: Alexa A, Rahnenfuhrer J (2023) topGO: Enrichment Analysis
 clusterProfiler: Wu T, et al. (2021) The Innovation 2:100141
 ```
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
